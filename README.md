@@ -1,5 +1,5 @@
 # formation_CDA
-exercices et évaluations réalisées dans le cadre de la formation AFPA préparant au Titre Professionnel de Concepteur développeur d'applications
+exercices et évaluations réalisées dans le cadre de la formation AFPA préparant au Titre Professionnel de Concepteur développeur d'applications.
 Trois blocs de compétences : 
 1 - Concevoir et développer des composants d'interface utilisateur en intégrant les recommandations de sécurité :
 Maquetter une application.
