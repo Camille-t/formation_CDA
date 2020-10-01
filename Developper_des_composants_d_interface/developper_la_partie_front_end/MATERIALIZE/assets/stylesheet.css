@@ -1,0 +1,60 @@
+/* radio input color */
+input[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #2e7d32 !important;
+    border: 2px solid #2e7d32 !important;
+}
+
+input[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:before,
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #2e7d32 !important;
+}
+
+/* switch color */
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #2e7d32 !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #81c784 !important;
+}
+
+/* button background-color */
+.btn,
+.btn-large,
+.btn-small {
+    background-color: #2e7d32 !important;
+}
+
+/* space between reset and submit button */
+#submit {
+    margin-left: 6px !important;
+}
+
+/* country dropdown content color */
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #2e7d32 !important;
+    background-color: #e8f5e9;
+}
+
+/* icon color */
+i {
+    color: #81c784 !important;
+}
+
+.datepicker-controls .select-month input {
+    width: 100px !important;
+}
+
+h1 {
+    font-size: 40px !important;
+}
+h2 {
+    font-size: 30px !important;
+}
+
+table {
+    min-height: 500px !important;
+}

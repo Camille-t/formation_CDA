@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.error {
+  color: red;
+}
+
+.rock {
+  font-family: 'Rock Salt', cursive;
+}
+
+#velvet_record {
+  font-weight: bolder;
+}
+
+.navbar-fixed, nav {
+  min-height: 115px !important;
+}
+
+#title {
+  font-weight: bold;
+}
+
+#artist {
+  text-decoration: underline;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #880e4f;
+}
+
+.dropdown-content {
+  background-color: #90a4ae;
+}

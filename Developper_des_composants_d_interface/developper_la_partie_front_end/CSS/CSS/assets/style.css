@@ -1,0 +1,123 @@
+/* NAVBAR */
+nav {
+    background-color: black;
+    /* on colore le fond de notre navbar en noir */
+    line-height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    /* on retire les puces de nos listes de liens */
+    margin: 0;
+    /* on supprime la marge par défaut */
+}
+
+li {
+    display: inline;
+    /* on dispose en ligne nos listes : les éléments ne sont plus les uns sous les autres  */
+    height: 20px;
+    padding: 5px;
+}
+
+a {
+    color: white;
+    /* on change la couleur de nos liens */
+}
+
+/* TITRES */
+h1 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+header img {
+    /* select img element in header element */
+    width: 25%;
+    height: auto;
+}
+#conteneur {
+    /* on passe notre conteneur en display flex */
+    display: flex;
+    flex-wrap: wrap;
+    /* les éléments du conteneur passent à la ligne si la taille de l'écran est réduite */
+}
+
+
+#colonneGauche {
+    max-width: 59vw;
+}
+
+#colonneDroite {
+    background-color: gray;
+    min-height: 400px;
+    min-width: 40vw;
+    
+}
+
+/* TABLEAU */
+table {
+    table-layout: fixed;
+    /*permet de définir une largeur fixe de colonne*/
+    max-width: 100%;
+    border-collapse: collapse;
+    /*permet d'éviter une superposition des bordures des différentes cellules du tableau*/
+    border: 1px solid black;
+    margin: 1px;
+}
+
+thead th:nth-child(1)
+/*sélectionne la première cellule de la thead*/
+
+    {
+    max-width: 40%
+}
+
+thead th:nth-child(2) {
+    max-width: 5%
+}
+
+thead th:nth-child(3) {
+    max-width: 20%
+}
+
+thead th:nth-child(4) {
+    max-width: 15%
+}
+
+thead th:nth-child(5) {
+    max-width: 10%
+}
+
+thead th:nth-child(6) {
+    max-width: 10%
+}
+
+th, td {
+    padding: 20px;
+}
+
+tbody {
+    border: 1px black solid;
+    text-align: center;
+}
+
+tbody td {
+    border: 1px black solid;
+    text-align: center;
+}
+
+th {
+    border: 1px black solid;
+}
+caption {
+    border: 2px solid black;
+}
+
+section img {
+    width : 100%;
+    height: auto;
+}
+    

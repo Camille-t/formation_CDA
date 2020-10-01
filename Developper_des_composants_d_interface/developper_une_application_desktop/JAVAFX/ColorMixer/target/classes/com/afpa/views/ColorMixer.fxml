@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ColorMixerController">
+   <children>
+      <Label fx:id="lbl4" layoutX="16.0" layoutY="17.0" prefHeight="191.0" prefWidth="565.0" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Label fx:id="lblRed" layoutX="363.0" layoutY="228.0" prefHeight="42.0" prefWidth="223.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="363.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="228.0" />
+      <Label fx:id="lblBlue" layoutX="363.0" layoutY="338.0" prefHeight="42.0" prefWidth="223.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="363.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="338.0" />
+      <Label fx:id="lblGreen" layoutX="363.0" layoutY="283.0" prefHeight="42.0" prefWidth="223.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="363.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="283.0" />
+      <Slider fx:id="sliderRed" layoutX="39.0" layoutY="242.0" onMouseReleased="#sliderRed_mouseReleased" prefHeight="14.0" prefWidth="301.0" AnchorPane.bottomAnchor="144.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="242.0" />
+      <Slider fx:id="sliderGreen" layoutX="39.0" layoutY="297.0" onMouseReleased="#sliderGreen_mouseReleased" prefHeight="14.0" prefWidth="301.0" />
+      <Slider fx:id="sliderBlue" layoutX="39.0" layoutY="352.0" onMouseReleased="#sliderBlue_mouseReleased" prefHeight="14.0" prefWidth="301.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>tableau</title>
+    <link rel="stylesheet" href=assets/style.css>
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/media.css">
+</head>
+
+<body>
+    <header>
+        <!-- indique l'en-tête avec logo + slogan -->
+        <img src="assets/images/jarditou_logo.jpg" alt="logo jarditou" title="logo jarditou" width="35%" height="auto">
+        <p>La qualité depuis 70 ans</p>
+    </header>
+    <nav>
+        <!-- indique un bloc de navigation, c'est à dire un menu -->
+        <ul>
+            <li>
+                <a href="accueil.html" title="page d'accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="tableau.html" title="tableau des produits">Tableau</a>
+            </li>
+            <li>
+                <a href="contact.html" title="page du formulaire de contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <img src="assets/images/promotion.jpg" alt="promotion sur les lames de terrasse"
+            title="promotion sur les lames de terrasse" width="100%" height="auto">
+    </section>
+    <section>
+        <h1>Tableaux | HTML 5</h1>
+        <table>
+            <caption>Ventes T1</caption>
+            <!-- on ajoute un titre ou légende à un tableau via la balise <caption>, qui est placée immédiatement sous la balise <table> -->
+            <thead>
+                <!-- L’entête des colonnes, c'est-à-dire chaque cellule de la première ligne qui sert de titre de colonnes est repéré par les balises <th> incluses dans une balise <thead> et une ligne <tr> -->
+                <tr>
+                    <th> - </th>
+                    <th>Janvier</th>
+                    <th>Février</th>
+                    <th>Mars</th>
+                </tr>
+            </thead>
+            <td colspan="4">Ventes du 1<sup>er</sup> trimestre</td>
+            <!-- L’attribut colspan est à appliquer sur une balise de cellule <td> et prend une valeur numérique qui indique le nombre de colonnes à regrouper. La cellule s’étendra sur le nombre de colonnes indiquées comme valeur -->
+            <tbody>
+                <tr>
+                    <td>Pierre</td>
+                    <td>65 800</td>
+                    <td>53 200</td>
+                    <td>46 400</td>
+                </tr>
+                <tr>
+                    <td>Paul</td>
+                    <td>88 000</td>
+                    <td>51 500</td>
+                    <td>62 300</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Jacques</td> <!-- l'attribut rowspan est à appliquer sur une balise de cellule <td> et prend une valeur numérique qui indique le nombre de lignes à regrouper. La cellule s’étendra sur le nombre de lignes indiquées comme valeur -->
+                    <td>74 400</td>
+                    <td>64 200</td>
+                    <td>78 900</td>
+                   </tr>
+                   <tr>
+                    <td>68 100</td>
+                    <td>76 700</td>
+                    <td>99 500</td>
+                   </tr>
+            </tbody>
+            <tfoot>
+                <!-- La balise <tfoot> permet d’indiquer des cellules en pied de tableau, par exemple un total de colonnes dans un tableau de chiffres. Elle comprend des balises <td> -->
+                <tr>
+                    <td>Total</td>
+                    <td>228 200</td>
+                    <td>168 900</td>
+                    <td>187 600</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="mentions_legales.html" title="mentions légales">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="horaires.html" title="horaires">Horaires</a>
+                </li>
+                <li>
+                    <a href="plan_du_site.html" title="plan du site">Plan du site</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

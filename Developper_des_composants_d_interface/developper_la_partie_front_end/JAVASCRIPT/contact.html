@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    </link>
+    <title>Contact</title>
+</head>
+
+<body>
+    <form id="contactForm" name="contactForm" action="http://bienvu.net/script.php" method="post" target="_blank"
+        novalidate autocomplete="off">
+        <!-- the action attribute specifies the action to be performed when the form is submitted.  -->
+        <!-- the target attribute with "_blank" value specifies that the submitted result will open in a new browser tab. -->
+        <!-- novalidate attribute specifies that the form data should not be validates when submitted. -->
+        <!-- when autocomplete attribute is off, the browser won't automatically complete the input values based on values that the user has entered before. -->
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <p id="requiredFieldsWarningMessage">* Ces zones sont obligatoires pour envoyer le formulaire.</p>
+            <p>
+                <label for="society">
+                    <span>Société :</span>
+                    <input class="society" id="society" name="society" type="text">
+                    <span class="asterisk">*</span>
+                    <span class="error" id="societyError" aria-live="polite"></span>
+                </label>
+            </p>
+            <p>
+                <label for="contactPerson">Personne à contacter :</label>
+                <input class="contactPerson" id="contactPerson" name="contactPerson" type="text">
+                <span class="asterisk">*</span>
+                <span class="error" id="contactPersonError" aria-live="polite"></span>
+            </p>
+            <p>
+                <label for="adress">Adresse de l'entreprise :</label>
+                <textarea class="adress" id="adress" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="zipCode">Code Postal :</label>
+                <input class="zipCode" id="zipCode" name="zipCode" type="text">
+                <span class="asterisk">*</span>
+                <span class="error" id="zipCodeError" aria-live="polite"></span>
+            </p>
+            <p>
+                <label for="city">Ville :</label>
+                <input class="city" id="city" name="city" type="text">
+                <span class="asterisk">*</span>
+                <span class="error" id="cityError" aria-live="polite"></span>
+            </p>
+            <p>
+                <label for="email">E-mail :</label>
+                <input class="email" id="email" name="email" type="email">
+                <span class="asterisk">*</span>
+                <span class="error" id="emailError" aria-live="polite"></span>
+            </p>
+            <p>
+                <label for="phone">Téléphone :</label>
+                <input class="phone" id="phone" type="number">
+            </p>
+            <p>
+                <label for="technicalEnvironment">Sélectionnez l'environnement technique du projet :</label>
+            </p>
+            <p>
+                <select class="technicalEnvironment" id="technicalEnvironment" name="">Choisissez
+                    <option value="1">Access</option>
+                    <option value="2">Java</option>
+                    <option value="3">Delphi</option>
+                    <option value="4">Windev</option>
+                    <option value="5">Visual Basic</option>
+                    <option value="6">Power Builder</option>
+                    <option value="7">Internet</option>
+                    <option value="8">Intranet</option>
+                    <option value="9">Windows NT</option>
+                    <option value="10">Unix</option>
+                    <option value="11">SQL Server</option>
+                    <option value="12">Oracle</option>
+                    <option value="13">Autres...</option>
+                </select>
+                <textarea></textarea>
+            </p>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+            </div>
+        </fieldset>
+    </form>
+    <script src="formulaire.js"></script>
+    <!-- balise script js toujours en fin de page avant fermeture de la balise body -->
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.afpa.Tab1Controller">
+   <children>
+      <TableView fx:id="lst_clients" layoutX="14.0" layoutY="59.0" prefHeight="327.0" prefWidth="390.0">
+        <columns>
+          <TableColumn fx:id="col_prenom" prefWidth="125.0" text="Prénom" />
+          <TableColumn fx:id="col_nom" prefWidth="130.0" text="Nom" />
+            <TableColumn fx:id="col_ville" prefWidth="134.0" text="Ville" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbl_tab" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="390.0" text="Le Tableau de l'exo">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_prenom" layoutX="432.0" layoutY="59.0" prefHeight="30.0" prefWidth="147.0" text="Prénom">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_nom" layoutX="432.0" layoutY="123.0" prefHeight="30.0" prefWidth="147.0" text="Nom">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_ville" layoutX="432.0" layoutY="185.0" prefHeight="30.0" prefWidth="147.0" text="Ville">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_prenom" layoutX="431.0" layoutY="89.0" promptText="Prénom..." />
+      <TextField fx:id="txt_nom" layoutX="431.0" layoutY="153.0" promptText="Nom..." />
+      <TextField fx:id="txt_ville" layoutX="431.0" layoutY="215.0" promptText="Ville..." />
+      <Button fx:id="btn_sauver" layoutX="444.0" layoutY="282.0" mnemonicParsing="false" onAction="#sauver" prefHeight="25.0" prefWidth="58.0" text="Sauver" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="282.0" />
+      <Button fx:id="btn_annuler" layoutX="510.0" layoutY="282.0" mnemonicParsing="false" onAction="#annuler" text="Annuler" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="510.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="282.0" />
+      <Button fx:id="btn_supprimer" layoutX="444.0" layoutY="315.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="124.0" text="Supprimer" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="315.0" />
+   </children>
+</AnchorPane>

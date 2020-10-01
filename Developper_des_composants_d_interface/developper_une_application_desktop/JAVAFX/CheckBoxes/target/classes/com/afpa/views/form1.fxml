@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Form1Controller">
+   <children>
+      <TitledPane fx:id="titledPaneChoice" animated="false" collapsible="false" disable="true" layoutX="373.0" layoutY="46.0" prefHeight="128.0" prefWidth="202.0" text="Choix" AnchorPane.bottomAnchor="226.0" AnchorPane.leftAnchor="373.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="46.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="checkBoxChoiceBackgroundColor" disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#checkBoxChoiceBackgroundColor_click" text="Couleur du fond" />
+                  <CheckBox fx:id="checkBoxChoiceTextColor" disable="true" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#checkBoxChoiceTextColor_click" text="Couleur du texte" />
+                  <CheckBox fx:id="checkBoxChoiceCaseSensitive" disable="true" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#checkBoxChoiceCaseSensitive_click" text="Casse" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="titledPaneBackgroundColor" animated="false" collapsible="false" disable="true" layoutX="25.0" layoutY="247.0" prefHeight="128.0" prefWidth="150.0" text="Fond" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="247.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="67.0">
+               <children>
+                  <RadioButton fx:id="radioButtonBackgroundColorRed" disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#radioButtonBackgroundColorRed_click" text="Rouge">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="backgroundColor" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="radioButtonBackgroundColorGreen" disable="true" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#radioButtonBackgroundColorGreen_click" text="Vert" toggleGroup="$backgroundColor" />
+                  <RadioButton fx:id="radioButtonBackgroundColorBlue" disable="true" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#radioButtonBackgroundColorBlue_click" text="Bleu" toggleGroup="$backgroundColor" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="titledPaneTextColor" animated="false" collapsible="false" disable="true" layoutX="225.0" layoutY="247.0" prefHeight="128.0" prefWidth="150.0" text="Texte" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="247.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="radioButtonTextColorRed" disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#radioButtonTextColorRed_click" text="Rouge">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="textColor" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="radioButtonTextColorWhite" disable="true" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#radioButtonTextColorWhite_click" text="Blanc" toggleGroup="$textColor" />
+                  <RadioButton fx:id="radioButtonTextColorBlack" disable="true" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#radioButtonTextColorBlack_click" selected="true" text="Noir" toggleGroup="$textColor" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="titledPaneCaseSensitive" animated="false" collapsible="false" disable="true" layoutX="424.0" layoutY="247.0" prefHeight="128.0" prefWidth="150.0" text="Casse" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="247.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="radioButtonCaseSensitiveLowerCase" disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#radioButtonCaseSensitiveLowerCase_click" text="Minuscule">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="caseSensitive" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="radioButtonCaseSensitiveUpperCase" disable="true" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#radioButtonCaseSensitiveUpperCase_click" text="Majuscule" toggleGroup="$caseSensitive" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TextField fx:id="textField1" layoutX="26.0" layoutY="85.0" onKeyTyped="#textField1_keyTyped" prefHeight="25.0" prefWidth="328.0" />
+      <Label fx:id="label1" layoutX="25.0" layoutY="129.0" prefHeight="39.0" prefWidth="328.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+@media screen and (max-width:768px)
+
+/*dispositif media querie pour écrans d'une largeur inférieure à 768px*/
+    {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    title {
+        font-size: 30px;
+    }
+
+    #invisible {
+        display: none;
+    }
+
+    nav {
+        min-height: 15vh;
+    }
+
+    #colonneGauche {
+        min-width: 90vw;
+
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

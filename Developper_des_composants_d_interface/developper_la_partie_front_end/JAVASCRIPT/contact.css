@@ -1,0 +1,49 @@
+body {
+    font: 1em sans-serif;
+    padding: 0;
+    margin : 0;
+  }
+  
+  form {
+    max-width: 600px;
+  }
+  
+  p * {
+    display: block;
+  }
+  
+  label, legend, #requiredFieldsWarningMessage {
+    font-weight: bold;
+  }
+  
+  #requiredFieldsWarningMessage, .asterisk {
+      color: red;
+  }
+  
+  /* Formatting rules for invalid fields */
+  input.invalid{
+    border-color:red;
+    background-color: #FDD;
+  }
+  
+  input:focus.invalid {
+    outline: none;
+  }
+  
+  /* Formatting rules for error messages */
+  .error {
+    width  : 100%;
+    padding: 0;
+   
+    font-size: 80%;
+    color: white;
+    background-color:red;
+    border-radius: 0 0 5px 5px;
+   
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }

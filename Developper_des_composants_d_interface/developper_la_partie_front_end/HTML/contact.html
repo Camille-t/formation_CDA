@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+</head>
+<body>
+    <header> <!-- indique l'en-tête avec logo + slogan -->
+        <img src="assets/images/jarditou_logo.jpg" alt="logo jarditou" title="logo jarditou" width="35%" height="auto"> 
+        <p>La qualité depuis 70 ans</p>     
+    </header>
+    <nav> <!-- indique un bloc de navigation, c'est à dire un menu -->
+        <ul>
+            <li>
+                <a href="accueil.html" title="page d'accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="tableau.html" title="tableau des produits">Tableau</a>
+            </li>
+            <li>
+                <a href="contact.html" title="page du formulaire de contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <img src="assets/images/promotion.jpg" alt="promotion sur les lames de terrasse" title="promotion sur les lames de terrasse" width="100%" height="auto">
+    </section>
+    <section>
+        <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+        <h4>merci de nous répondre</h4>
+    <form action="http://bienvu.net/script.php" method="get"> <!-- méthode get permet d'observer les données transmises dans l'url -->
+        <fieldset> <!-- la balise <fieldset> permet de regrouper visuellement certains champs pour clarifier la présentation. Cela nécessite obligatoirement la balise fille <legend> à plaer immédiatement après et qui permet de donner un nom au groupe de champs  -->
+            <legend>Vos coordonnées</legend>
+            <p>votre nom <input type="text"></p>
+            <p>votre prénom <input type="text"></p>
+            <p>votre date de naissance <input type="date"></p>
+            <p>votre adresse <input type="text"></p>
+            <p>votre ville <input type="text"></p>
+            <p>votre code postal <input type="number"></p>
+            <p>votre e-mail <input type="email"></p>
+        </fieldset>
+        <fieldset>
+            vous êtes un homme <input type="radio">vous êtes une femme <input type="radio">
+        </fieldset>
+        <select name="métier">
+            <option value="développeur">développeur</option>
+            <option value="graphiste">graphiste</option>
+            <option value="webdesigner">webdesigner</option>
+        </select>            
+        <p>si vous avez répondu autre, précisez <input type="text"></p>
+        <select name="salaire">
+            <option value="&lt;1000€">&lt;1000€</option>
+            <option value="entre 1000€ et 2000€">entre 1000€ et 2000€</option>
+            <option value=">2000€">>2000€</option>
+        </select>
+        <p>en quelle année avez-vous suivi le stage afpa? <input type="number"></p>
+        <textarea name="commentaires" rows="5" cols="30">vos commentaires</textarea>
+        <p><h3>merci d'avoir répondu au questionnaire</h3></p>
+        <input type="submit" value="validez">
+        <input type="reset" value="annulez">      
+    </form>
+    </section>   
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="mentions_legales.html" title="mentions légales">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="horaires.html" title="horaires">Horaires</a>
+                </li>
+                <li>
+                    <a href="plan_du_site.html" title="plan du site">Plan du site</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>       
+</body>
+</html>
